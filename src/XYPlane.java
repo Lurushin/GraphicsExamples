@@ -8,6 +8,13 @@ public class XYPlane extends Canvas {
 
     public void paint(Graphics window) {
         window.setColor(Color.WHITE);
+        window.fillRect(650, 25, 50, 50);
+        window.drawRect(655, 20, 50, 50);
+        window.setColor(Color.BLACK);
+        window.fillRect(655, 30, 10, 40);
+        window.fillRect(655, 60, 40, 10);
+
+        window.setColor(Color.WHITE);
 
         int[] yAxisPoints = {100, 700};
         int[] xyAxisPoints = {100, 100};
@@ -39,7 +46,7 @@ public class XYPlane extends Canvas {
             double yint = lineInput.nextDouble();
         lineInput.close();
 
-        int[] yIntPoint = {(int)yint*400, ((int)(-1 * slope*700 + yint*400))};
+        int[] yIntPoint = {(int)(-1 * yint * 300 + 700), ((int)(-1 * slope * 600 + (-1 * yint * 300 + 700)))};
         int[] xForYInt = {100, 700};
         int nPointsForYint = 2;
         Polygon line = new Polygon(xForYInt, yIntPoint, nPointsForYint);
