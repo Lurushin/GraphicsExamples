@@ -12,6 +12,8 @@ import java.awt.Canvas;
 public class DoubleBuffer extends Canvas
 {
 	private BufferedImage back;
+
+	// Rather than animating by making an image and deleting it, this is less flickery by drawing the image and moving it int view
 	
 	public DoubleBuffer()
 	{

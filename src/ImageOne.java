@@ -27,7 +27,7 @@ public class ImageOne extends Canvas
 		try
 		{
 			Image image = ImageIO.read(new File(imageName)); 
-			window.drawImage(image,300,300,100,150,null);
+			window.drawImage(image,300,300,100,150,null); // null should always be null
 		}
 		catch(Exception e)
 		{

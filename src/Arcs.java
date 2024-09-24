@@ -22,7 +22,7 @@ public class Arcs extends Canvas
 		window.setColor(Color.BLUE);
 		
 		//drawArc(int x, int y, int width, int height, int startAngle, int arcAngle)
-		window.drawArc(100,100,40,40,90,90);
+		window.drawArc(100,100,40,40,90,90); // start angle is with reference to the zero degrees at the top of the circle and is counter-clockwise // the arcAngle is clockwise
 		
 		window.setColor(Color.GREEN);
 		window.drawArc(100,175,50,50,0,-180);

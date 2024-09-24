@@ -24,8 +24,9 @@ public class Polygons extends Canvas
 		int[] yPoints = {100,500,500};
 		int nPoints = 3;
 		Polygon triangle = new Polygon(xPoints,yPoints,nPoints);
+		// this draws points and connects them
 
 		window.setColor(Color.RED);
-		window.fillPolygon(triangle);
+		window.fillPolygon(triangle); // this could also be drawPolygon
 	}
 }

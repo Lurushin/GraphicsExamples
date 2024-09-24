@@ -14,13 +14,14 @@ public class Colors extends Canvas
 		setBackground(Color.WHITE);
 	}
 
+	// if you randomize colors out here, the colors would stay
 	public void paint( Graphics window )
 	{
 		window.setColor(Color.BLACK);
 		window.drawString("Colors ", 50, 50);
 
 								//Color( int red, int green, int blue )
-		Color newColor = new Color(40,			60,			80);
+		Color newColor = new Color(40,			60,			80); // RGB goes to 255 for each r, g, and b
 		window.setColor(newColor);
 		window.drawArc(100,100,50,50,0,-180);
 		
